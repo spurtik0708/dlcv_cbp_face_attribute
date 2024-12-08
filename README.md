@@ -86,17 +86,22 @@ Ensure the following are installed:
    pip install -r requirements.txt
    ```
 
-4. Download models and labels:
+4. Navigate to the `src` directory:
+   ```bash
+   cd src
+   ```
+
+5. Download models and labels:
    ```bash
    python download.py
    ```
 
-5. Run the FastAPI server:
+6. Run the FastAPI server:
    ```bash
    python main.py
    ```
 
-6. Access the API:
+7. Access the API:
    - Visit `http://127.0.0.1:8000/docs` for interactive API documentation.
 
 ## Usage
@@ -137,12 +142,13 @@ Ensure the following are installed:
 ## Project Structure
 ```
 face-attribute-detection/
-├── inference.py          # Model inference logic
-├── main.py               # FastAPI application
-├── download.py           # Script to download models and labels
+├── README.md             # Project documentation
 ├── requirements.txt      # Project dependencies
 ├── models/               # Directory for storing downloaded models
-└── README.md             # Project documentation
+├── src/                  # Source code directory
+│   ├── inference.py      # Model inference logic
+│   ├── main.py           # FastAPI application
+│   └── download.py       # Script to download models and labels
 ```
 
 ## API Endpoints
