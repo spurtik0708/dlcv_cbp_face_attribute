@@ -8,7 +8,7 @@ app = FastAPI()
 logging.basicConfig(level=logging.INFO, format="%(asctime)s - %(levelname)s - %(message)s")
 
 # Paths
-MODEL_DIR = os.getenv("MODEL_DIR", "models")
+MODEL_DIR = os.getenv("MODEL_DIR", "../models")
 MODEL_PATH = os.path.join(MODEL_DIR, "resnet50.pth")
 LABELS_PATH = os.path.join(MODEL_DIR, "imagenet_classes.txt")
 
